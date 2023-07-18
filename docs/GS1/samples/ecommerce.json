@@ -1,0 +1,215 @@
+{
+    "identification": {
+        "gtin14": "00041271025620",
+        "targetMarketCountryCode": "124",
+        "catalogueGln": "0056150000018",
+        "dataProviderName": "Saputo Cheese, General Partnership",
+        "baseGln": "0056150000018"
+    },
+    "ecommerceContent": [
+        {
+            "functionalNameEnglish": "coffee whitener",
+            "functionalNameFrench": "colorant à café",
+            "variantEnglish": "French vanilla",
+            "variantFrench": "vanille française",
+            "brandNameEnglish": "International Delight",
+            "brandNameFrench": "International Delight",
+            "gpcCode": "10000189",
+            "manufacturerBrandEnglish": "Saputo",
+            "manufacturerBrandFrench": "Saputo",
+            "allergyOtherTextEnglish": "Lactose free",
+            "allergyOtherTextFrench": "Sans lactose",
+            "individualSize": "473",
+            "individualSizeUOM": "12573",
+            "onPackProductMarketingEnglish": "A rich creamy dream of sweet mellow French Vanilla flavour\n\nLactose free (like all coffee whiteners)",
+            "onPackProductMarketingFrench": "Un mélange d'onctuosité à faire rêver et de douces notes de vanille française\n\nSans lactose (comme tous les colorants à café)",
+            "manufacturersAddressEnglish": "Saputo Inc.\nMontréal, Québec  H1P 1X8",
+            "manufacturersAddressFrench": "Saputo Inc.\nMontréal, Québec  H1P 1X8",
+            "productCareandUseInstructionsEnglish": "Shake well\n\nFor best quality, use within two weeks of opening but no later than date stamped on label.",
+            "productCareandUseInstructionsFrench": "Bien agiter\n\nPour une qualité supérieure, veuillez utiliser dans les 2 semaines suivant l'ouverture sans toutefois dépasser la date inscrite sur le contenant.",
+            "storageEnglish": "Keep refrigerated",
+            "storageFrench": "Garder au réfrigérateur",
+            "productWarningsEnglish": "Do not use if seal under cap is broken.",
+            "productWarningsFrench": "Ne pas utiliser si le sceau sous le couvercle est brisé.",
+            "trademarkInformationEnglish": "Manufactured Under License by Saputo Dairy Products Canada G.P.\nInternational Delight is a registered trademark owned by WhiteWave Services, Inc.",
+            "trademarkInformationFrench": "Fabriqué sous licence par Saputo Produits laitiers Canada s.e.n.c.\nInternational Delight est une marque de commerce déposée propriété de WhiteWave Services, Inc.",
+            "warrantyDescriptionEnglish": "QUESTIONS?\nSaputo Inc.\nMontréal, Québec  H1P 1X8\n1-800-672-8866\nwww.saputo.com",
+            "warrantyDescriptionFrench": "QUESTIONS?\nSaputo Inc.\nMontréal, Québec  H1P 1X8\n1-800-672-8866\nwww.saputo.com",
+            "identification": {
+                "nameOfBrandOwnerOrSubmitter": "Saputo Cheese, General Partnership",
+                "excellenceLevel": "1",
+                "dateUpdated": "2018-10-02T02:15:20.717-04:00",
+                "ecommerceStatusNutritionStatus": "Certified",
+                "gln": "0056150000018",
+                "gtin": "00041271025620",
+                "systemVersion": "2017-04-07T14:18:18.000-04:00"
+            },
+            "imageGroup": [],
+            "nutritionAndIngredients": [
+                {
+                    "ingredientsEnglish": "Water, Sugar/glucose-fructose, Palm oil, Sodium caseinate* (milk), Dipotassium phosphate, Natural and artificial flavour, Carrageenan, Mono and diglycerides, Sodium stearoyl lactylate, Polysorbate 60, Salt, *Sodium caseinate is not a source of lactose",
+                    "ingredientsFrench": "Eau, Sucre/glucose-fructose, Huile de palme , Caséinate de sodium* (lait), Phosphate dipotassique, Arôme naturel et artificiel, Carraghénine, Mono et  diglycérides, Stéaroyl lactylate de sodium, Polysorbate 60, Sel, *Le caséinate de sodium n'est pas une source de lactose",
+                    "nutritionCustomGridEnglish": {
+                        "headers": [
+                            "",
+                            "Per 15 mL",
+                            "% Daily Value"
+                        ],
+                        "rows": [
+                            [
+                                "Calories",
+                                "35",
+                                ""
+                            ],
+                            [
+                                "Fat",
+                                "1.5 g",
+                                "2 %"
+                            ],
+                            [
+                                " Saturated",
+                                "1 g",
+                                "5 %"
+                            ],
+                            [
+                                " + Trans",
+                                "0 g",
+                                ""
+                            ],
+                            [
+                                "Cholesterol",
+                                "0 mg",
+                                "0 %"
+                            ],
+                            [
+                                "Sodium",
+                                "2 mg",
+                                "1 %"
+                            ],
+                            [
+                                "Carbohydrate",
+                                "6 g",
+                                "2 %"
+                            ],
+                            [
+                                " Fibre",
+                                "0 g",
+                                "0 %"
+                            ],
+                            [
+                                " Sugars",
+                                "6 g",
+                                ""
+                            ],
+                            [
+                                "Protein",
+                                "0.1 g",
+                                ""
+                            ],
+                            [
+                                "Vitamin A",
+                                "",
+                                "0 %"
+                            ],
+                            [
+                                "Vitamin C",
+                                "",
+                                "0 %"
+                            ],
+                            [
+                                "Calcium",
+                                "",
+                                "0 %"
+                            ],
+                            [
+                                "Iron",
+                                "",
+                                "0 %"
+                            ]
+                        ]
+                    },
+                    "nutritionCustomGridFrench": {
+                        "headers": [
+                            "",
+                            "par 15 mL",
+                            "% valeur quotidienne"
+                        ],
+                        "rows": [
+                            [
+                                "Calories",
+                                "35",
+                                ""
+                            ],
+                            [
+                                "Lipides",
+                                "1.5 g",
+                                "2 %"
+                            ],
+                            [
+                                " saturés",
+                                "1 g",
+                                "5 %"
+                            ],
+                            [
+                                " + trans",
+                                "0 g",
+                                ""
+                            ],
+                            [
+                                "Cholestérol",
+                                "0 mg",
+                                "0 %"
+                            ],
+                            [
+                                "Sodium",
+                                "2 mg",
+                                "1 %"
+                            ],
+                            [
+                                "Glucides",
+                                "6 g",
+                                "2 %"
+                            ],
+                            [
+                                " Fibres",
+                                "0 g",
+                                "0 %"
+                            ],
+                            [
+                                " Sucres",
+                                "6 g",
+                                ""
+                            ],
+                            [
+                                "Protéines",
+                                "0.1 g",
+                                ""
+                            ],
+                            [
+                                "Vitamine A",
+                                "",
+                                "0 %"
+                            ],
+                            [
+                                "Vitamine C",
+                                "",
+                                "0 %"
+                            ],
+                            [
+                                "Calcium",
+                                "",
+                                "0 %"
+                            ],
+                            [
+                                "Fer",
+                                "",
+                                "0 %"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "components": []
+        }
+    ]
+}

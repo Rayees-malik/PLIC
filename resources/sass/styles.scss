@@ -1,0 +1,351 @@
+@import "pl-variables";
+@import "reboot";
+@import "./bootstrap/functions";
+@import "./bootstrap/variables";
+@import "./bootstrap/mixins";
+@import "./bootstrap/bootstrap-grid";
+@import "./bootstrap/card";
+@import "./bootstrap/forms";
+@import "./bootstrap/tooltip";
+@import "./bootstrap/button-group";
+@import "./bootstrap/pagination";
+@import "./bootstrap/badge";
+
+@import "./custom/chosen";
+@import "./custom/typography";
+@import "./custom/helper";
+@import "./custom/header";
+@import "./custom/buttons-pagination";
+@import "./custom/form-elements";
+@import "./custom/accordion";
+@import "./custom/tabs";
+@import "./custom/content-box";
+@import "./custom/breadcrumbs";
+@import "./custom/spinner-progress";
+@import "./custom/alert";
+@import "./custom/tooltip";
+@import "./custom/tables";
+@import "./custom/data-tables";
+@import "./custom/product";
+@import "./custom/view-pages";
+@import "./custom/jquery-ui";
+@import "./custom/forms";
+@import "./custom/print";
+
+@import "../../node_modules/flatpickr/dist/flatpickr.min.css";
+@import "choices.js/public/assets/styles/choices.min.css";
+@import "filepond/dist/filepond.min.css";
+
+// TEMP
+.bg-primary {
+    background-color: $color-primary;
+    color: #fff;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.btns-display .btn {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+//XXL container
+.container-xxl {
+    max-width: 1660px;
+}
+
+// BRAND CATALOG PREVIEW
+.catalog-preview-btn {
+    // background-color: lightblue;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin: -15px auto 0;
+    justify-content: center;
+    cursor: pointer;
+    color: $text-secondary;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #145994;
+        transition: transform 0.3s ease-in;
+        margin-left: 10px;
+    }
+}
+
+.brand-catalogue-display {
+    background-color: #fff;
+    border: solid 1px #e0e0e0;
+    padding: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: "Oswald", sans-serif;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 24px;
+            line-height: 1.1;
+            // font-weight: 500;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__brokered-by {
+        border-top: solid 2px #000;
+        border-bottom: solid 2px #000;
+        padding: 5px 0;
+
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    &__url-tel {
+        padding: 5px 0;
+        font-size: 14px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__description_wrapper {
+        font-weight: 700;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.25;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 0;
+    }
+}
+
+// PRODUCT CATALOG PREVIEW
+.product-catalogue-display-wrapper {
+    background-color: #fff;
+    border: solid 1px #e0e0e0;
+    padding: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: "Oswald", sans-serif;
+
+    h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $text-primary;
+    }
+
+    .product-catalogue-display {
+        display: flex;
+        width: 100%;
+
+        div {
+            line-height: 1;
+            color: $text-secondary;
+        }
+
+        &__stock_id {
+            padding-right: 15px;
+        }
+
+        &__name {
+            padding-right: 5px;
+            white-space: nowrap;
+        }
+
+        &__dots {
+            border-bottom: dotted 1px #424242;
+            flex-grow: 1;
+        }
+
+        &__size {
+            padding-left: 5px;
+            padding-right: 15px;
+        }
+
+        &__case_size,
+        &__upc,
+        &__unit_cost {
+            padding-right: 15px;
+            white-space: nowrap;
+        }
+
+        &__language {
+            flex: 0 0 100px;
+            text-align: right;
+        }
+    }
+}
+
+// APPROVED REJECTED LEGEND
+.approved-rejected-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .approved,
+    .rejected {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            display: inline-block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+    }
+
+    .approved {
+        margin-right: 15px;
+
+        &::before {
+            background-color: $color-success;
+            content: "A";
+            color: white;
+            line-height: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+
+    .rejected {
+        &::before {
+            background-color: $color-danger;
+            content: "R";
+            color: white;
+            line-height: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+//  AJAX LOADER
+.formContainer {
+    position: relative;
+}
+
+.ajax-loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .spinner-item {
+        position: absolute;
+    }
+}
+
+.pending-delete {
+    .input-wrap {
+        opacity: 0.3;
+
+        input {
+            cursor: not-allowed;
+        }
+    }
+}
+
+.fileuploader-item-restore .type-holder,
+.fileuploader-item-restore .thumbnail-holder,
+.fileuploader-item-restore .content-holder {
+    opacity: 0.4;
+}
+
+.fileuploader-item-restore .type-holder:hover,
+.fileuploader-item-restore .thumbnail-holder:hover,
+.fileuploader-item-restore .content-holder:hover {
+    opacity: 0.8;
+}
+
+.fileuploader-item-inner .tooltip-wrap {
+    position: absolute;
+    right: 2px;
+    top: 28px;
+    z-index: 5;
+}
+
+// Product price breakdown
+.product-price-breakdown {
+    p,
+    h4 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
+
+// Gary's Requests
+.js-finance-container {
+    .ui-accordion .ui-accordion-header {
+        background-color: #0e406a;
+        border: 1px solid #155583;
+        color: white;
+    }
+
+    .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+        border-top: 7px solid #ffc530;
+    }
+}
+
+.impersonation-leave-btn {
+    background-color: $color-accent;
+    color: $text-primary;
+
+    &.dev {
+        background-color: $color-danger;
+    }
+
+    &.dev:hover {
+        background-color: $color-primary-light;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: $color-danger;
+    }
+
+}
+
+.empty-circle {
+    color: $gray-shade-2;
+}
+
+.checked-circle {
+    color: $color-primary-light;
+    border-color: $color-primary-light;
+}
+
+[x-cloak] { display: none !important; }

@@ -1,0 +1,52 @@
+.table {
+    th.sortable {
+        cursor: pointer;
+
+        i {
+            position: relative;
+            top: 6px;
+        }
+    }
+}
+
+.table.invoices-table {
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background-color: $background-color;
+            }
+
+            &:last-child {
+                background-color: #fff;
+            }
+
+            td {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+table .text-right {
+    text-align: right;
+}
+table .text-left {
+    text-align: left;
+}
+table .text-center {
+    text-align: center;
+}
+
+td.accounting-total {
+    font-weight: bold;
+    border-top: medium double $dark-border-color;
+}
+
+table.float-header {
+    position: relative;
+
+    th {
+        background-color: $color-accent;
+        color: #fff;
+    }
+}

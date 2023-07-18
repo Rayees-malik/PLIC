@@ -1,0 +1,90 @@
+@media print {
+    * {
+        // overflow: hidden !important;
+        display: border-box !important;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 13px !important;
+    }
+
+    h2 {
+        font-size: 13px !important;
+    }
+
+    h3 {
+        font-size: 12px !important;
+    }
+
+    h4 {
+        font-size: 12px !important;
+    }
+
+    h5,
+    h6,
+    p,
+    span,
+    .tab-btn,
+    .sticky-address-box {
+        font-size: 11px !important;
+    }
+
+    .tabs-header {
+        overflow: hidden !important;
+    }
+
+    #header {
+        display: none !important;
+    }
+
+    .container,
+    .container-xxl {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .info-box-actions,
+    button,
+    .btn-link,
+    .primary-btn {
+        display: none !important;
+    }
+
+    .view-page-sticky {
+        display: flex !important;
+    }
+
+    .row {
+        display: flex !important;
+        width: 100% !important;
+        flex-grow: 1 !important;
+    }
+
+    .col-sm-3,
+    .col-md-3,
+    .col-lg-3,
+    .col-xl-3 {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+    }
+
+    .col-sm-4,
+    .col-md-4,
+    .col-lg-4,
+    .col-xl-4 {
+        flex: 0 0 33% !important;
+        max-width: 66% !important;
+    }
+
+    .col-sm-8,
+    .col-md-8,
+    .col-lg-8,
+    .col-xl-8 {
+        flex: 0 0 66% !important;
+        max-width: 66% !important;
+    }
+}

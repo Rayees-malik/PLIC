@@ -1,0 +1,10 @@
+{
+	"toolbar": [
+		["style", ["style"]],
+		["font", ["bold", "underline", "italic", "clear"]],
+		["color", ["color"]],
+		["para", ["ul", "ol", "paragraph"]],
+		["table", ["table"]],
+		["view", ["fullscreen", "codeview", "help"]]
+	]
+}

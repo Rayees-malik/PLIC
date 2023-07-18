@@ -1,0 +1,10 @@
+<script type="text/javascript">
+    window.uploaderSetups = [];
+    window.loadUploaders = function() {
+        window.uploaderSetups.forEach(uploader => uploader());
+    };
+
+    $(function() {
+        window.loadUploaders();
+    });
+</script>

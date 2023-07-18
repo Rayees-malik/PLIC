@@ -1,0 +1,48 @@
+// ALERTS
+.alert-base {
+  width: 100%;
+  border-radius: $border-radius;
+  color: #fff;
+  padding: 15px;
+  padding-left: 60px;
+  position: relative;
+  text-align: left;
+
+  a {
+    color: #fff;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.alert-success {
+  @extend .alert-base;
+
+  background-color: $color-success;
+}
+
+.alert-warning {
+  @extend .alert-base;
+
+  background-color: $color-warning;
+}
+
+.alert-danger {
+  @extend .alert-base;
+
+  background-color: $color-danger;
+}

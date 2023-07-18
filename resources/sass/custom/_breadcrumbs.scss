@@ -1,0 +1,22 @@
+//BREADCRUMBS
+.breadcrumbs-wrap {
+  display: inline-flex;
+  align-items: center;
+  color: $color-primary-light;
+
+  a:first-child {
+    line-height: 0;
+    margin-left: 0;
+  }
+
+  a {
+    margin: 0 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: $color-primary-light;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

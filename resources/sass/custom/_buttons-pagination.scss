@@ -1,0 +1,158 @@
+// BUTTONS
+.btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $text-secondary;
+    background-color: $gray-shade-4;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    border: none;
+    box-shadow: $box-shadow;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 0 15px;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        opacity: 0.85;
+        outline: none;
+    }
+
+    i {
+        font-size: 24px;
+        margin: 0 3px;
+    }
+
+    span,
+    i {
+        pointer-events: none;
+    }
+}
+
+.primary-btn {
+    @extend .btn;
+
+    background-color: $color-primary-light;
+    color: $gray-shade-4;
+}
+
+.secondary-btn {
+    @extend .btn;
+}
+
+.accent-btn {
+    @extend .btn;
+
+    background: $color-accent;
+    color: $color-primary-light;
+}
+
+.warning-btn {
+    @extend .btn;
+
+    background: $color-danger;
+    color: #fff;
+}
+
+.success-btn {
+    @extend .btn;
+
+    background: $color-success;
+    color: #fff;
+}
+
+.link-btn {
+    @extend .btn;
+
+    background: transparent;
+    color: $color-primary-light;
+    box-shadow: none;
+}
+
+.inline-btn {
+    @extend .btn;
+
+    padding: 0;
+    height: auto;
+}
+
+.block-btn {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.disabled-btn {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.text-link {
+    text-decoration: none;
+    color: $text-primary;
+
+    &:hover {
+        text-decoration: underline;
+        color: $color-primary-light;
+    }
+}
+
+// PAGINATION
+.pagination-wrap {
+    display: inline-flex;
+    align-items: center;
+    // background-color: lightblue;
+
+    .pagination-back,
+    .pagination-next {
+        @extend .btn;
+
+        background-color: $color-primary-light;
+        color: $gray-shade-4;
+    }
+
+    .pagination-back {
+        margin-right: 5px;
+        i {
+            margin-left: -10px;
+        }
+    }
+
+    .pagination-next {
+        margin-left: 5px;
+        i {
+            margin-right: -10px;
+            margin-left: 10px;
+        }
+    }
+
+    .page-num {
+        font-size: 16px;
+        font-weight: 500;
+        color: $text-disabled-hint;
+        padding: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+    .page-active {
+        font-size: 22px;
+        font-weight: 700;
+        color: $color-primary-light;
+    }
+}

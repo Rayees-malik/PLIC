@@ -1,0 +1,12 @@
+// DATA PLACEHOLDER
+.placeholder {
+    position: relative;
+}
+.placeholder::after {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+    opacity: 0.6;
+}

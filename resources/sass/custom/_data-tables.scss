@@ -1,0 +1,382 @@
+.dataTables_wrapper {
+    position: relative;
+
+    .row-search {
+        background-color: rgba($color: #4caf50, $alpha: 0.6) !important;
+    }
+
+    .even.row-search {
+        background-color: rgba($color: #4caf50, $alpha: 0.4) !important;
+    }
+
+    thead,
+    tfoot {
+        background-color: $gray-shade-4;
+
+        th {
+            border-right: solid 1px #fff;
+            color: $text-secondary;
+            padding: 15px;
+        }
+    }
+
+    tbody {
+        .even {
+            background-color: $gray-shade-4;
+        }
+
+        td {
+            border-color: transparent;
+            padding: 12px;
+            box-sizing: border-box;
+            color: $text-primary;
+
+            &.dt-body-right {
+                padding-right: 10px;
+                text-align: right;
+            }
+        }
+
+        tr {
+            &:nth-child(even) {
+                background-color: $gray-shade-4;
+            }
+
+            &.selected {
+                td {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .table-btn {
+        font-size: 12px;
+        padding: 0 10px;
+        height: 32px;
+        margin-top: -5px;
+
+        i {
+            font-size: 19px;
+        }
+    }
+
+    .dt-buttons {
+        text-align: left;
+        .dt-button {
+            @extend .btn;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            & > span {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .dataTables_length,
+    .dataTables_filter {
+        padding-bottom: 15px;
+        label {
+            font-weight: 500 !important;
+            color: $text-secondary !important;
+            margin-bottom: 0;
+        }
+
+        select,
+        input[type="search"] {
+            border: solid 1px $border-color;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 15px;
+            border-radius: $border-radius-sm;
+            transition: border-color 0.2s ease-in;
+            font-weight: 500;
+            box-shadow: $box-shadow;
+            -webkit-appearance: none;
+            appearance: none /*menulist*/;
+            background-image: url(/images/icon-arrow-down.svg);
+            background-size: 24px 24px;
+            background-repeat: no-repeat;
+            background-position: center right;
+
+            &:focus {
+                border-color: $color-primary-light;
+                outline: none;
+                box-shadow: $box-shadow-focus;
+            }
+        }
+    }
+
+    .dataTables_length {
+        text-align: left !important;
+
+        select {
+            margin: 0 10px;
+            width: 100px !important;
+            padding-right: 35px;
+            background-image: url(/images/icon-arrow-down.svg);
+            background-size: 24px 24px;
+            background-position: center right;
+            cursor: pointer;
+        }
+    }
+
+    .dataTables_filter {
+        margin-left: -15px;
+        text-align: left !important;
+        padding-left: 15px;
+
+        label {
+            position: relative;
+        }
+
+        input[type="search"] {
+            margin-left: 10px;
+            padding-left: 40px;
+            background-image: url(/images/icon-search.svg);
+            background-size: 30px 30px;
+            background-position: center left;
+            // width: 70%;
+        }
+    }
+
+    .dataTables_info {
+        padding-top: 25px !important;
+        padding-bottom: 10px !important;
+        color: $text-secondary;
+        font-weight: 500;
+        line-height: 1;
+        text-align: left !important;
+    }
+
+    .dataTables_paginate {
+        padding-top: 15px !important;
+        display: flex;
+        padding-bottom: 30px;
+
+        .pagination {
+            display: flex;
+            margin-left: auto !important;
+
+            .page-link {
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+
+        .paginate_button {
+            @extend .btn;
+            color: $text-disabled-hint;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0 5px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background: transparent;
+                border: none;
+                color: $color-primary-light;
+                opacity: 1;
+            }
+
+            &.previous,
+            &.next {
+                background: $color-primary-light;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                box-shadow: $box-shadow;
+                padding: 0 10px;
+
+                &:hover {
+                    border: none;
+                    opacity: 0.8;
+                }
+
+                &::before,
+                &::after {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &.previous {
+                padding-left: 0;
+
+                &::before {
+                    content: url(/images/icon-previous.svg);
+                    margin-right: 5px;
+                }
+            }
+
+            &.next {
+                padding-right: 0;
+
+                &::after {
+                    content: url(/images/icon-next.svg);
+                    margin-left: 5px;
+                }
+            }
+
+            &.disabled {
+                background: $color-primary-light;
+                color: #fff;
+                opacity: 0.6;
+                border: none;
+                pointer-events: none;
+
+                &:hover {
+                    background: $color-primary-light;
+                    color: #fff;
+                }
+            }
+
+            &.current {
+                font-size: 22px;
+                font-weight: 700;
+                color: $color-primary-light;
+                vertical-align: -2px;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .dataTables_processing {
+        transform: translate(-50%, -50%);
+        margin: 0 !important;
+        height: 100px;
+        z-index: 999;
+
+        .spinner-container {
+            position: absolute;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .input-wrap {
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        .dataTables_filter {
+            margin-left: 0;
+            text-align: right !important;
+
+            label {
+                position: relative;
+                text-align: right !important;
+            }
+
+            input[type="search"] {
+                margin-right: 2px;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .dataTables_paginate {
+            .paginate_button {
+                &.previous {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+// Drag and drop row styling
+table.dt-rowReorder-float {
+    position: absolute !important;
+    opacity: 0.9;
+    table-layout: fixed;
+    outline: 2px solid $color-primary !important;
+    outline-offset: -2px;
+    z-index: 2001;
+    background-color: $gray-shade-4;
+
+    .table-btn {
+        font-size: 12px;
+        padding: 0 10px;
+        height: 32px;
+        width: 100%;
+        margin-top: -5px;
+
+        i {
+            font-size: 19px;
+        }
+    }
+
+    td {
+        border-color: transparent;
+        padding: 12px;
+        box-sizing: border-box;
+        color: $text-primary;
+        text-align: center;
+    }
+}
+
+tr.dt-rowReorder-moving {
+    outline: 2px solid $color-primary !important;
+    outline-offset: -2px;
+}
+
+body.dt-rowReorder-noOverflow {
+    overflow-x: hidden;
+}
+
+table.dataTable {
+    max-width: 100% !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+
+    td.reorder {
+        text-align: center;
+        cursor: move;
+    }
+}
+
+.promo-table-header {
+    tr {
+        th {
+            line-height: 1.1;
+            white-space: nowrap;
+            padding: 10px 15px;
+        }
+    }
+}
+
+.datatable-filters-wrap {
+    h4 {
+        margin-bottom: 0;
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 1px;
+        overflow: hidden;
+        display: block;
+        border: 0;
+        border-top: solid 1px $border-color;
+    }
+
+    .dropdown-wrap,
+    .input-wrap {
+        label {
+            font-size: 14px;
+        }
+    }
+}
